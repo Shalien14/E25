@@ -1,0 +1,81 @@
+body {
+    background-color: #63a7e6; 
+    margin: 0;
+    padding: 0;
+}
+.image-container {
+    /* 1. Sets the boundary for absolute positioning */
+    position: relative;
+    /* Optional: Sets a maximum width for the container */
+    width: 100%; 
+    margin: 0 auto;
+}
+
+.image-container img {
+    /* 2. Ensures the image fills the container */
+    
+    width: 100%;
+    height: auto;
+}
+
+.overlay-text {
+    /* 3. The magic: positions the text over the image */
+    position: absolute;
+    /* Example: To place the text at the bottom center */
+    bottom: 68%;
+   
+    transform: translateX(-50%); /* Centers the text horizontally */
+     left: 50%;
+    /* Styling for the text itself */
+    color: white; /* Make the text visible */
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for readability */
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 2vw;
+    font-family: 'Times New Roman';
+}
+
+.empossed-table {
+    width: 95%;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); 
+    margin-top: 2vw;
+    margin-bottom:2vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    overflow-x: auto; 
+}
+table{
+    width: 100%;
+    border-collapse: collapse; 
+}
+
+.empossed-table th {
+    padding: 1rem 1.5rem;
+    text-align: left;
+    font-size: 1rem;
+    color: #4a5568; 
+    letter-spacing: 0.05em;
+    border-bottom: 0.5vw solid #ddd; 
+    background-color: #f0f0f0; 
+}
+
+.empossed-table td {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.95rem;
+    border-bottom: 0.5vw solid #eee;
+    background-color: white;
+}
+
+
+.empossed-table th:nth-child(1), .empossed-table td:nth-child(1) {
+    width: 4vw;
+    text-align: center;
+}
+
+.empossed-table tbody tr:hover td {
+    background-color: #fafafa;
+    transition: background-color 0.2s ease;
+}
+
